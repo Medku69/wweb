@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 1;
+      let b = 2;
+      let z;
+      z = b;
+      b = a;
+      a = z;
+      console.log(a, b);
+
+      const functionname = (B, C, D) => {
+        let A = B * C - D;
+        return A;
+      };
+      console.log(functionname(1, 2, 3));
+      const Functionname = (day, hour) => {
+        let maxhours = day * 24 + hour;
+        return maxhours;
+      };
+      console.log(Functionname(2, 3));
+      const Funct = (x) => {
+        let dun =
+          x >= 90 ? "A" : x >= 80 ? "B" : x >= 70 ? "C" : x >= 60 ? "D" : "F";
+        return dun;
+      };
+      console.log(funct(95));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: pink;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sanasan too hed ve</h1>
+    <h3>1-100n hoorond bga toog taagaarai</h3>
+    <input type="text" id="taasanToo" />
+    <button onclick="utgaAwahFunkts()">taah</button>
+    <p>Hint: <span id="utga"></span></p>
+
+    <script>
+      const randomToo = Math.floor(Math.random() * 100) + 1;
+      function utgaAwahFunkts() {
+        const taasanToo = document.getElementById("taasanToo").value;
+        const utga = document.getElementById("utga");
+
+        if (taasanToo < randomToo) {
+          utga.textContent = "Baga baina";
+        } else if (taasanToo > randomToo) {
+          utga.textContent = "Ih baina";
+        } else utga.textContent = "Bayr hurgey";
+      }
+    </script>
+    <img src="meme.jpg" alt="" />
+  </body>
+</html>

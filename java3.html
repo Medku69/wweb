@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const undurJil = (jil) => {
+        if (jil % 400 == 0 || (jil % 4 === 0 && jil % 100 !== 0)) {
+          return "undur jil";
+        } else {
+          return "undur jil bish";
+        }
+      };
+      console.log(undurJil(2024));
+      let sar = 4;
+      const honog = (sar) => {
+        switch (sar) {
+          case 1:
+            console.log(31);
+            break;
+          case 2:
+            console.log(28);
+            break;
+          case 3:
+            console.log(31);
+            break;
+          case 4:
+            console.log(30);
+            break;
+          case 5:
+            console.log(31);
+            break;
+          case 6:
+            console.log(30);
+            break;
+          case 7:
+            console.log(31);
+            break;
+          case 8:
+            console.log(31);
+            break;
+          case 9:
+            console.log(30);
+            break;
+          case 10:
+            console.log(31);
+            break;
+          case 11:
+            console.log(30);
+            break;
+          case 12:
+            console.log(31);
+            break;
+          default:
+            console.log(error);
+            break;
+        }
+      };
+      let n = " Hello JavaScript";
+      console.log(n.repeat(3));
+      const sum = (i) => {
+        let s = 0;
+        for (let n = 0; n <= i; n++) {
+          if (n % 3 == 0 || n % 5 == 0) {
+            s = s + n;
+          }
+        }
+        return s;
+      };
+      console.log("3 ba 5d huvagddg 0 oos 20 hurtel toonuud " + sum(20));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 1;
+      let y = 3;
+      if (y > x) console.log(y);
+      else console.log(x);
+
+      let i = 0;
+      do {
+        if (i % 2 === 0) console.log(i);
+        i++;
+      } while (i <= 10);
+
+      let X = 15;
+      if (X % 3 === 0 && x % 5 === 0) {
+        console.log("FizzBuzz");
+      } else if (X % 3 === 0) {
+        console.log("Fizz");
+      } else if (X % 5 === 0) {
+        console.log("Buzz");
+      }
+      if (X % 3 !== 0 && x % 5 !== 0) {
+        console.log("Input");
+      }
+    </script>
+  </body>
+</html>
